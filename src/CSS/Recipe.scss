@@ -1,0 +1,123 @@
+.main_Container {
+
+    .image_descriptiondiv {
+        border: none;
+
+        >div:last-child {
+            border-right: solid 2px #46beff;
+
+            div {
+                h2 {
+                    font-family: 'Abril Fatface', cursive;
+                    font-size: 2rem;
+                    color: #868686;
+                    margin-top: 1rem;
+                }
+
+                p {
+                    font-family: 'Kalam', cursive;
+                    color: #8ad6ffd2;
+                }
+            }
+        }
+    }
+
+    >div:nth-child(2) {
+        >div:last-child {
+            h3 {
+                font-family: 'Kalam', cursive;
+                color: #868686;
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-family: 'Kalam', cursive;
+                color: #46beff;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .container {
+        .row {
+            ul {
+                margin-top: 2rem;
+
+                h4 {
+                    font-family: 'Abril Fatface', cursive;
+                    font-size: 1.7rem;
+                    color: #46beff;
+                }
+
+                li {
+                    border: none !important;
+                    outline: none !important;
+                    padding: 1rem 0;
+                    font-family: 'Caveat', cursive !important;
+                    font-size: 1.3rem;
+
+
+                    .stepp {
+                        font-family: 'Kalam', cursive !important;
+                        color: #10abff;
+                        border-bottom: #868686 solid 1px !important;
+
+                    }
+
+                    .fw-bold {
+                        font-family: 'Caveat', cursive;
+                    }
+
+                    .badge {
+                        font-family: 'Kalam', cursive;
+                    }
+
+
+
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:600px) {
+    .main_Container {
+        .image_descriptiondiv {
+            >div:last-child {
+                div {
+                    h2 {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+        >div:nth-child(2) {
+            >div:last-child {
+                h3 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: .95rem;
+                }
+            }
+        }
+
+        .container {
+            .row {
+                ul {
+                    h4 {
+                        font-size: 1.3rem;
+                    }
+
+                    li {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

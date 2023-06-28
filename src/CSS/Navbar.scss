@@ -1,0 +1,169 @@
+::placeholder{
+    color: #515151!important;
+}
+
+
+h1 {
+    display: none !important;
+}
+
+.offcanvas_btn {
+    display: none !important;
+}
+
+header {
+    background: white;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    .main-container {
+        height: auto !important;
+        padding: 0rem 0;
+        margin: 0 !important;
+
+        // categories and add button
+        .accordion {
+            margin: 0 !important;
+            border: none !important;
+
+            .accordion-item {
+                border: none !important;
+
+                button {
+                    background: none !important;
+                    border: none !important;
+                }
+            }
+
+
+
+
+            .add_BTN span:hover {
+                border-radius: 5px;
+                transition: all .3s;
+                color: #46beff;
+                background: rgba(70, 190, 255, 0.395);
+            }
+        }
+
+
+
+        // search bar------&  btn
+        .form_div {
+            border-left: rgb(219, 219, 219) 1px solid;
+
+            .searchBAR_div {
+                background: white;
+
+                input {
+                    width: 70%;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: 300;
+                    margin: 0;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid #46beff;
+                    border-radius: 0;
+
+                }
+
+                button {
+                    width: 10%;
+                    font-family: 'Ubuntu', sans-serif;
+                    border: none;
+                    color: #46beff;
+
+                }
+
+                button:hover {
+                    transform: scale(1.1);
+                    background: none;
+                    color: #46beff;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media(max-width:768px) {
+
+    .offcanvas_btn {
+        display: inline-block !important;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: #46beff !important;
+    }
+
+    h1 {
+        font-family: 'Lobster', cursive;
+        position: absolute;
+        top: 1.5rem;
+        left: 1rem;
+        display: inline-block !important;
+        color: #46beff !important;
+
+    }
+
+
+    header {
+        display: none !important;
+    }
+
+
+    // off canvas search 
+    .offCanvas_search {
+        padding: 0;
+        background: none;
+
+        input {
+            width: 70%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #46beff;
+            border-radius: 0;
+        }
+
+        button {
+            width: 10%;
+            border: none;
+            background: none;
+            color: #46beff;
+            font-size: 2rem;
+        }
+
+        button:hover {
+            background: none;
+            transform: scale(1.1);
+            transition: all .3s;
+            color: #46beff;
+        }
+    }
+
+
+}
+
+// categories and add button
+.accordion {
+    color: rgba(0, 0, 0, 0.23);
+    margin: 2rem 0 !important;
+    border: none !important;
+
+    .accordion-item {
+        border: none !important;
+
+        button {
+            background: none !important;
+            border: none !important;
+        }
+    }
+}

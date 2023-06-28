@@ -1,0 +1,35 @@
+.containr {
+    background: url('../Images/recipe_bg.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: 100% 100%;
+
+    .button {
+        text-decoration: none;
+        position: absolute;
+        top: 5rem;
+        left: 2rem;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 6rem;
+        font-family: 'Dancing Script', cursive;
+        padding: 2rem 4rem;
+        color: #000000;
+    }
+
+    .button:hover {
+        transition: all .3s;
+        background: #0000004e;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width:600px) {
+    .containr {
+        .button {
+            left: 0rem;
+            font-size: 2.5rem;
+        }
+    }
+}

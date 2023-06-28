@@ -1,0 +1,221 @@
+    $main-color-1: #8AD6FF;
+    $main-color-11: #46beff;
+    $main-color-2: #868686;
+
+
+::placeholder {
+    color: rgb(113, 132, 132) !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+form {
+    background: #8ad6ff2b;
+    border-radius: 20px;
+    padding: 3rem 0;
+
+    div:first-child {
+        //  this is row div
+
+        h1:first-child {
+            //first heading of add yours 
+            margin-bottom: 3rem;
+            display: inline-block !important;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+            color: $main-color-1;
+        }
+
+        div {
+            //column div...
+
+            label {
+                font-size: 1rem;
+                font-family: 'Ubuntu', sans-serif;
+                color: $main-color-11;
+
+            }
+
+            // this h6 is for ingridient1 ,2 ,3 more... 
+            h6 {
+                font-size: 1.2rem;
+                margin-top: 2rem;
+                font-weight: 500;
+                font-family: 'Ubuntu', sans-serif;
+                color: $main-color-1;
+
+            }
+
+            input,
+            textarea {
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: 300;
+                margin: .6rem 0;
+                padding: .56rem;
+                font-size: 1.2rem;
+                resize: none;
+                border: none;
+                outline: none;
+            }
+
+            // addmore buttons
+            button {
+                font-family: 'Ubuntu', sans-serif;
+                border: none;
+                background: none;
+                color: $main-color-11;
+                outline: none;
+                margin: 1rem 0;
+                font-size: 1.3rem;
+            }
+
+            button[type='submit'] {
+                color: $main-color-1;
+                // border: 1px solid orange;
+                padding: 1.5rem 3rem;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            button[type='submit']:hover {
+                color: $main-color-11;
+                background: #8ad6ffb9;
+            }
+        }
+
+        legend {
+            margin: 2rem 1rem;
+            font-weight: 700;
+            font-family: 'Ubuntu', sans-serif;
+            color: $main-color-2;
+
+        }
+    }
+}
+
+
+
+
+@media (max-width:992px) {
+    form {
+        margin-top: 1rem;
+
+        div:first-child {
+            h1:first-child {
+                margin-top: 1rem;
+                font-size: 1.2rem;
+                display: inline-block !important;
+
+            }
+        }
+    }
+}
+
+
+@media (max-width:776px) {
+    form {
+        margin-top: 6rem;
+
+        div:first-child {
+            h1:first-child {
+                margin-top: 5rem;
+                font-size: 1.2rem;
+                display: inline-block !important;
+
+            }
+        }
+    }
+
+}
+
+
+@media(max-width:576px) {
+
+    form {
+        margin-top: 7rem;
+
+        div:first-child {
+            //  this is row div
+
+            h1:first-child {
+                margin-top: 5rem;
+                font-size: 1.2rem;
+                display: inline-block !important;
+
+            }
+
+            div {
+                //column div...
+
+                label {
+                    font-size: .85rem;
+                }
+
+                // this h6 is for ingridient1 ,2 ,3 more... 
+                h6 {
+                    font-size: 1rem;
+                }
+
+                input,
+                textarea {
+                    font-size: 1rem;
+                }
+
+                // addmore buttons
+                button {
+                    font-size: 1rem;
+                }
+            }
+
+            legend {
+                font-size: .95rem;
+            }
+        }
+    }
+
+
+}
+
+
+@media(max-width:336px) {
+
+    form {
+
+        div:first-child {
+            //  this is row div
+
+            h1:first-child {
+                font-size: 1rem;
+            }
+
+            div {
+                //column div...
+
+                label {
+                    font-size: .77rem;
+                }
+
+                // this h6 is for ingridient1 ,2 ,3 more... 
+                h6 {
+                    font-size: 1rem;
+                }
+
+                input,
+                textarea {
+                    font-size: .95rem;
+                }
+
+                // addmore buttons
+                button {
+                    font-size: .95rem;
+                }
+            }
+
+            legend {
+                font-size: .9rem;
+            }
+        }
+    }
+
+
+}
